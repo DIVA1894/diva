@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center><h1>OOTY ONLINE ROOM BOOKING</h1>
+</center>
+  <div class="elem-group">
+    <label>Your Name</label>
+    <input type="text"  name="visitor_name" placeholder="DIVAKAR" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" name="visitor_email" placeholder="diva.2004@gmail.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="number" name="visitor_phone" placeholder="12345678910" required>
+  </div>
+  
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select  name="room_preference" required>
+        <option value="">Choose a Room from the List</option>
+        <option value="connecting">Connecting</option>
+        <option value="adjoining">Adjoining</option>
+        <option value="adjacent">Adjacent</option>
+    </select>
+  </div>
+  
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea  name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button><inupt type="submit" >Book The Rooms</button>
+
+</body>
+
+</html>
